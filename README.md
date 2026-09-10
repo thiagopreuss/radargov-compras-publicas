@@ -99,7 +99,7 @@ radargov-compras-publicas/
     └── imagens/
 ```
 
-## 7. Tecnologias
+## Tecnologias
 
 - Python
 - MySQL
@@ -107,7 +107,7 @@ radargov-compras-publicas/
 - Power BI
 - API do PNCP
 
-## 8. Dashboard
+## Dashboard
 
 ### Visão Geral do Mercado
 
