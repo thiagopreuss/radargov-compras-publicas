@@ -69,30 +69,37 @@ MYSQL_DATABASE=sua_base
 
 O arquivo .env utilizado durante a execução local não deve ser versionado no repositório. O arquivo disponibilizado no projeto serve apenas como exemplo da estrutura necessária para a configuração.
 
-### 4. Tratamento e modelagem
+### 5. Tratamento e modelagem
 
 Views SQL consolidam os dados de contratação e itens e aplicam as regras necessárias para a análise.
 
-### 5. Power BI
+### 6. Power BI
 
 Os dados tratados são utilizados para construção dos dashboards, permitindo analisar demanda, valores estimados, municípios, órgãos compradores e tipos de luvas.
 
 ## Estrutura do projeto
 
 ```text
-radargov/
+radargov-compras-publicas/
 ├── README.md
 ├── python/
 │   ├── coletar_contratacoes_consulta_v2.py
-│   └── coletar_itens_pncp_v2.py
+│   ├── coletar_itens_pncp_v2.py
+│   └── .env
 ├── sql/
 │   ├── tabelas/
-│   ├── views/
-├── powerbi/
+│   │   ├── stg_pncp_contratacoes_consulta.sql
+│   │   ├── stg_pncp_itens.sql
+│   │   └── log_pncp_coleta_itens.sql
+│   └── views/
+│       ├── vw_itens_contratacoes.sql
+│       ├── vw_radar_luvas.sql
+│       └── vw_radar_luvas_analitica.sql
+└── powerbi/
     └── imagens/
 ```
 
-## Tecnologias
+## 7. Tecnologias
 
 - Python
 - MySQL
@@ -100,7 +107,7 @@ radargov/
 - Power BI
 - API do PNCP
 
-## Dashboard
+## 8. Dashboard
 
 ### Visão Geral do Mercado
 
