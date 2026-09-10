@@ -111,15 +111,15 @@ radargov-compras-publicas/
 
 ### Visão Geral do Mercado
 
-![Visão Geral do Mercado](./powerbi/imagens/RadarGov%20-%20Visão%20Geral.png)
+![Visão Geral do Mercado](Power%20BI/Imagens/RadarGov%20-%20Visão%20Geral.png)
 
 ### Detalhamento do Valor Estimado
 
-![Detalhamento do Valor Estimado](./powerbi/imagens/RadarGov%20-%20Detalhamento%20do%20Valor%20Estimado.png)
+![Detalhamento do Valor Estimado](Power%20BI/imagens/RadarGov%20-%20Detalhamento%20do%20Valor%20Estimado.png)
 
 ### Itens Detalhados
 
-![Itens Detalhados](./powerbi/imagens/RadarGov%20-%20Itens%20Detalhados.png)
+![Itens Detalhados](Power%20BI/imagens/RadarGov%20-%20Itens%20Detalhados.png)
 
 ## Próximos passos
 
