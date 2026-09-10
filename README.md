@@ -40,7 +40,7 @@ PNCP → Python → MySQL → SQL/Views → Power BI
 
 ### 1. Coleta de contratações
 
-O primeiro processo (`coletar_contratacoes_consulta_v2.py`)consulta o PNCP e coleta as contratações correspondentes ao recorte definido.
+O primeiro processo (`coletar_contratacoes_consulta_v2.py`) consulta o PNCP e coleta as contratações correspondentes ao recorte definido.
 
 ### 2. Coleta de itens
 
