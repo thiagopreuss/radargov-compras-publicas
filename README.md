@@ -40,15 +40,21 @@ PNCP → Python → MySQL → SQL/Views → Power BI
 
 ### 1. Coleta de contratações
 
-O primeiro processo consulta o PNCP e coleta as contratações correspondentes ao recorte definido.
+O primeiro processo (`coletar_contratacoes_consulta_v2.py`)consulta o PNCP e coleta as contratações correspondentes ao recorte definido.
 
 ### 2. Coleta de itens
 
-A partir das contratações selecionadas, o segundo processo consulta os itens associados e armazena os dados para posterior tratamento e filtragem da categoria analisada.
+A partir das contratações selecionadas, o segundo processo (`coletar_itens_pncp_v2.py`) consulta os itens associados e armazena os dados para posterior tratamento e filtragem da categoria analisada.
 
 ### 3. Banco de dados
 
-Os dados são armazenados em tabelas de staging e acompanhados por uma tabela de log para controle do processo de coleta.
+Os dados são armazenados em tabelas de staging no MySQL.
+
+A tabela stg_pncp_contratacoes_consulta recebe as contratações coletadas pelo script Python `coletar_contratacoes_consulta_v2.py`.
+
+A tabela stg_pncp_itens recebe os itens das contratações selecionadas pelo script Python `coletar_itens_pncp_v2.py`.
+
+A tabela log_pncp_coleta_itens registra o resultado do processamento de cada contratação, incluindo status da coleta, quantidade de itens e mensagem de retorno. Esse log também é utilizado para evitar o reprocessamento de contratações que já foram coletadas.
 
 ### 4. Tratamento e modelagem
 
