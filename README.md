@@ -62,9 +62,9 @@ Os scripts Python utilizam um arquivo .env para armazenar as informações de co
 
 As variáveis utilizadas são:
 
-MYSQL_HOST=seu_host
-MYSQL_USER=seu_usuario
-MYSQL_PASSWORD=sua_senha
+MYSQL_HOST=seu_host <br>
+MYSQL_USER=seu_usuario <br>
+MYSQL_PASSWORD=sua_senha <br>
 MYSQL_DATABASE=sua_base
 
 O arquivo .env utilizado durante a execução local não deve ser versionado no repositório. O arquivo disponibilizado no projeto serve apenas como exemplo da estrutura necessária para a configuração.
