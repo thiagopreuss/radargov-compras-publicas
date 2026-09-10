@@ -64,15 +64,13 @@ Os dados tratados são utilizados para construção dos dashboards, permitindo a
 radargov/
 ├── README.md
 ├── python/
-│   ├── coletar_contratacoes_consulta.py
-│   └── coletar_itens_pncp.py
+│   ├── coletar_contratacoes_consulta_v2.py
+│   └── coletar_itens_pncp_v2.py
 ├── sql/
 │   ├── tabelas/
 │   ├── views/
-│   └── consultas_validacao.sql
 ├── powerbi/
-│   └── imagens/
-└── docs/
+    └── imagens/
 ```
 
 ## Tecnologias
