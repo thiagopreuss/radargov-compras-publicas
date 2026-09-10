@@ -15,7 +15,7 @@ load_dotenv()
 URL = "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao"
 
 
-DATA_INICIAL = "20260111"
+DATA_INICIAL = "20260101"
 DATA_FINAL = "20260331"
 UF = "RJ"
 MODALIDADE = 8
