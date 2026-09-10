@@ -50,11 +50,11 @@ A partir das contratações selecionadas, o segundo processo (`coletar_itens_pnc
 
 Os dados são armazenados em tabelas de staging no MySQL.
 
-A tabela stg_pncp_contratacoes_consulta recebe as contratações coletadas pelo script Python `coletar_contratacoes_consulta_v2.py`.
+A tabela `stg_pncp_contratacoes_consulta` recebe as contratações coletadas pelo script Python `coletar_contratacoes_consulta_v2.py`.
 
-A tabela stg_pncp_itens recebe os itens das contratações selecionadas pelo script Python `coletar_itens_pncp_v2.py`.
+A tabela `stg_pncp_itens recebe os itens` das contratações selecionadas pelo script Python `coletar_itens_pncp_v2.py`.
 
-A tabela log_pncp_coleta_itens registra o resultado do processamento de cada contratação, incluindo status da coleta, quantidade de itens e mensagem de retorno. Esse log também é utilizado para evitar o reprocessamento de contratações que já foram coletadas.
+A tabela `log_pncp_coleta_itens` registra o resultado do processamento de cada contratação, incluindo status da coleta, quantidade de itens e mensagem de retorno. Esse log também é utilizado para evitar o reprocessamento de contratações que já foram coletadas.
 
 ### 4. Tratamento e modelagem
 
