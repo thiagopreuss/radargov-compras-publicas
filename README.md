@@ -56,6 +56,19 @@ A tabela `stg_pncp_itens recebe os itens` das contratações selecionadas pelo s
 
 A tabela `log_pncp_coleta_itens` registra o resultado do processamento de cada contratação, incluindo status da coleta, quantidade de itens e mensagem de retorno. Esse log também é utilizado para evitar o reprocessamento de contratações que já foram coletadas.
 
+### 4. Configuração da conexão
+
+Os scripts Python utilizam um arquivo .env para armazenar as informações de conexão com o MySQL, evitando deixar credenciais diretamente no código.
+
+As variáveis utilizadas são:
+
+MYSQL_HOST=seu_host
+MYSQL_USER=seu_usuario
+MYSQL_PASSWORD=sua_senha
+MYSQL_DATABASE=sua_base
+
+O arquivo .env utilizado durante a execução local não deve ser versionado no repositório. O arquivo disponibilizado no projeto serve apenas como exemplo da estrutura necessária para a configuração.
+
 ### 4. Tratamento e modelagem
 
 Views SQL consolidam os dados de contratação e itens e aplicam as regras necessárias para a análise.
