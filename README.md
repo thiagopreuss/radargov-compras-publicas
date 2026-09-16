@@ -47,7 +47,7 @@ O primeiro processo (`coletar_contratacoes_consulta_v2.py`) consulta o PNCP e co
 
 A partir das contratações selecionadas, o segundo processo (`coletar_itens_pncp_v2.py`) filtra as contratações com base no campo de objeto da compra, utilizando termos relacionados a luvas, EPI, uniformes, materiais e insumos hospitalares, entre outros. 
 
-Em seguida, o processo consulta os itens associados no PNCP e armazena os dados para tratamento e análise posterior da categoria selecionada.
+Em seguida, o processo consulta os itens associados no PNCP e armazena os dados para tratamento e análise posterior, com foco nos itens de luvas.
 
 ### 3. Banco de dados
 
