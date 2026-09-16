@@ -21,7 +21,8 @@ Construir um pipeline de dados capaz de:
 - Estado: Rio de Janeiro
 - Período: janeiro a março de 2026
 - Modalidades: Pregão Eletrônico e Dispensa
-- Categoria analisada: luvas
+
+> A análise tem como foco a categoria de `luvas`, identificada posteriormente a partir das contratações coletadas.
 
 ## Resultados da amostra
 
@@ -44,7 +45,9 @@ O primeiro processo (`coletar_contratacoes_consulta_v2.py`) consulta o PNCP e co
 
 ### 2. Coleta de itens
 
-A partir das contratações selecionadas, o segundo processo (`coletar_itens_pncp_v2.py`) consulta os itens associados e armazena os dados para posterior tratamento e filtragem da categoria analisada.
+A partir das contratações selecionadas, o segundo processo (`coletar_itens_pncp_v2.py`) filtra as contratações com base no campo de objeto da compra, utilizando termos relacionados a luvas, EPI, uniformes, materiais e insumos hospitalares, entre outros. 
+
+Em seguida, o processo consulta os itens associados no PNCP e armazena os dados para tratamento e análise posterior da categoria selecionada.
 
 ### 3. Banco de dados
 
@@ -52,7 +55,7 @@ Os dados são armazenados em tabelas de staging no MySQL.
 
 A tabela `stg_pncp_contratacoes_consulta` recebe as contratações coletadas pelo script Python `coletar_contratacoes_consulta_v2.py`.
 
-A tabela `stg_pncp_itens recebe os itens` das contratações selecionadas pelo script Python `coletar_itens_pncp_v2.py`.
+A tabela `stg_pncp_itens` recebe os itens das contratações selecionadas pelo script Python `coletar_itens_pncp_v2.py`.
 
 A tabela `log_pncp_coleta_itens` registra o resultado do processamento de cada contratação, incluindo status da coleta, quantidade de itens e mensagem de retorno. Esse log também é utilizado para evitar o reprocessamento de contratações que já foram coletadas.
 
